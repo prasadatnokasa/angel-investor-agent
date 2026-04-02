@@ -1,0 +1,26 @@
+{
+  "name": "angel-investor-agent",
+  "main": "src/server.ts",
+  "compatibility_date": "2025-11-01",
+  "compatibility_flags": ["nodejs_compat"],
+
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "AngelInvestorAgent",
+        "class_name": "AngelInvestorAgent"
+      }
+    ]
+  },
+
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": ["AngelInvestorAgent"]
+    }
+  ],
+
+  // Secret env vars — set with: wrangler secret put ANTHROPIC_API_KEY
+  // Then: wrangler secret put BRAVE_API_KEY
+  "vars": {}
+}

@@ -20,6 +20,10 @@
     }
   ],
 
+  "build": {
+    "command": "npm run build"
+  },
+
   // Secret env vars — set with: wrangler secret put ANTHROPIC_API_KEY
   // Then: wrangler secret put BRAVE_API_KEY
   "vars": {},

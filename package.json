@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite dev",
+    "dev": "vite",
     "build": "vite build",
     "deploy": "vite build && wrangler deploy",
     "preview": "vite preview"
@@ -19,7 +19,6 @@
     "zod": "^3.24.0"
   },
   "devDependencies": {
-    "@cloudflare/vite-plugin": "latest",
     "@cloudflare/workers-types": "^4.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",

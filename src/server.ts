@@ -8,6 +8,7 @@ export interface Env {
   AngelInvestorAgent: DurableObjectNamespace;
   ANTHROPIC_API_KEY: string;
   BRAVE_API_KEY: string;
+  ASSETS: Fetcher;
 }
 
 const SYSTEM_PROMPT = `You are an elite startup funding research analyst specialising in the Indian angel investment ecosystem.
@@ -117,7 +118,7 @@ export default {
 
     return (
       (await routeAgentRequest(request, env)) ??
-      new Response("Not found", { status: 404 })
+      env.ASSETS.fetch(request)
     );
   },
 } satisfies ExportedHandler<Env>;

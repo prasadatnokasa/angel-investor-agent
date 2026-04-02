@@ -22,5 +22,10 @@
 
   // Secret env vars — set with: wrangler secret put ANTHROPIC_API_KEY
   // Then: wrangler secret put BRAVE_API_KEY
-  "vars": {}
+  "vars": {},
+
+  "assets": {
+    "directory": "./dist/client",
+    "binding": "ASSETS"
+  }
 }

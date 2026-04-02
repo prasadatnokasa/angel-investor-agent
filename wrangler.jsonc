@@ -1,5 +1,5 @@
 {
-  "name": "angel-investor-agent",
+  "name": "funding-ai-agent",
   "main": "src/server.ts",
   "compatibility_date": "2025-11-01",
   "compatibility_flags": ["nodejs_compat"],
